@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+
+  "name": "Rando-Boxd",
+  "description": "Selects a random movie displayed on a letterboxd page.",
+  "version": "1.0",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+
+  "permissions": [
+  ],
+  "content_scripts": [
+    {
+      "matches": [ "http://*.letterboxd.com/*", "https://*.letterboxd.com/*" ],
+      "js": [ "libs/jquery-3.2.1.min.js", "libs/jquery-ui-1.12.1.effects/script.min.js", "script.js" ],
+      "css": [ "libs/jquery-ui-1.12.1.effects/style.min.css", "style.css" ]
+    }
+  ]
+}

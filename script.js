@@ -35,7 +35,6 @@ $button.click(function () {
     }
 
     var $container = $selection.closest(".poster-container, .poster-list, .poster");
-    //if ($container.length === 0) { $container = $selection; }
 
     var top = $container.offset().top - margin;
     var bottom = top + $container.height() + margin*2;
